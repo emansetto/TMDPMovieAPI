@@ -1,0 +1,24 @@
+API Key:: 512b8a337c3c1d69c4fca05852918903
+
+Now Playing ::
+https://api.themoviedb.org/3/movie/now_playing?api_key=512b8a337c3c1d69c4fca05852918903&language=en-US&page=1
+
+Popular ::
+https://api.themoviedb.org/3/movie/popular?api_key=512b8a337c3c1d69c4fca05852918903&language=en-US&page=1
+
+Top Rated ::
+https://api.themoviedb.org/3/movie/top_rated?api_key=512b8a337c3c1d69c4fca05852918903&language=en-US&page=1
+Trending ::
+https://api.themoviedb.org/3/trending/all/day?api_key=512b8a337c3c1d69c4fca05852918903
+Upcoming ::
+
+https://api.themoviedb.org/3/movie/upcoming?api_key=<<api_key>>&language=en-US&page=1
+
+How to get images:: https://image.tmdb.org/t/p/w500 + poster_path
+
+For Discover Movies
+https://api.themoviedb.org/3/discover/movie?api_key=512b8a337c3c1d69c4fca05852918903
+ movies[i].original_title
+
+https://api.themoviedb.org/3/movie/now_playing?api_key=512b8a337c3c1d69c4fca05852918903&page=69
+pages=> from 1=>69

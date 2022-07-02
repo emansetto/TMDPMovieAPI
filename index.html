@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Movies</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu_item logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="menu_item menu">
+           
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="menu_item soc" >
+            <i class="fa-brands fa-chrome"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+    </header>
+    <nav class="sidebar close">
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            
+                            <span class="text nav-text" id="now_playing">Now Playing</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                           
+                            <span class="text nav-text" id="popular">Popular</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                           
+                            <span class="text nav-text" id="top_rated">Top Rated</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                           
+                            <span class="text nav-text" id="trending">Trending</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            
+                            <span class="text nav-text" id="upcoming">Upcoming</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#form">
+                            
+                            <span class="text nav-text">Contact Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="social-links d-flex flex-row">
+                <li class="">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa-brands fa-chrome"></i>
+                    </a>
+                </li>
+                   
+            </div>
+            <div class="pt-3"><span>Copyright Â© 2019 All Rights Reserved.</span></div>
+            
+        </div>
+    </nav>
+
+    <section class="home">
+        <!-- Search Section -->
+     <div class="search pt-4">
+        <div class="container w-75">
+            <div class="row">
+                <div class="col-md-6">
+                    <input id="allMovies-1" class="form-control mb-5 " placeholder="get movies by word...">
+                </div>
+                <div class="col-md-6">
+                    <input id="allMovies-2" class="form-control mb-5 " placeholder="get movie...">
+                </div>
+            </div>
+        </div>
+     </div> 
+    <!-- End Search Section -->
+    <!-- movies Section -->
+    <div class="movies">
+        <div class="container">
+            <div class="movie_list">
+           <div class="row " id="movie-lists">
+            <!-- <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div> -->
+           </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Section -->
+    <!-- Form Section -->
+    <div class="form" id="form">
+        <div class="container w-75">
+            <div class="row">
+               <h3>Contact Us</h3>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="name" placeholder="Enter Your Name">
+                            <div class="alert alert-danger" id="namealert" role="alert">
+                              Your Name is not valid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="email" placeholder="Enter Email">
+                            <div class="alert alert-danger" id="emailalert" role="alert">
+                              Your email is not valid
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6"> <div class="form-group">
+                        <input class="form-control" id="phone" placeholder="Enter Phone">
+                        <div class="alert alert-danger" id="phonealert" role="alert">
+                          Your phone is not valid
+                        </div>
+                    </div></div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="age" placeholder="Enter Age">
+                            <div class="alert alert-danger" id="agealert" role="alert">
+                              Your age is not valid
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="passowrd" placeholder="Enter Passorwd">
+                            <div class="alert alert-danger" id="passowrdalert" role="alert">
+                              Your passowrd is not valid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="conf-pass" placeholder="Confirm Passowrd">
+                            <div class="alert alert-danger" id="conf-passalert" role="alert">
+                              this doesn't match passowrd
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                <button type="submit" disabled="" id="submitBtn" class="btn btn-outline-danger" style="color: #dc3545;
+                background-color: transparent;">Submit</button>
+        </div>
+    </div>
+    <!-- End Form Section -->
+    </section>
+    </script>
+    <script src="js/all.js"></script>
+    <script src="js/all,min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>   
+</body>
+</html>
